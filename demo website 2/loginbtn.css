@@ -1,0 +1,153 @@
+.openloginBtn{
+    height: 25px;
+    width: 130px;
+    background-image: linear-gradient(yellow, orange);
+    border: none;
+    border-radius: 10px;
+    color: blue;
+    box-shadow: 3px 3px 5px black;
+}
+.login_popup{
+    /* border: 2px solid red; */
+    background-color: rgb(169, 229, 231);
+    /* box-shadow: 3px 3px 3px 3px black; */
+    border-radius: 20px;
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    right: 25%;
+    cursor: pointer;
+    
+}
+.login_page{
+    border: none;
+    width: 100px;
+    height: 25px;
+    background-image: linear-gradient(yellow, orange);
+    color: white;
+    border-radius: 10px;
+    margin: 20px 0 5px 170px;
+    cursor: pointer;
+
+}
+.signup_page{
+    border: none;
+    width: 100px;
+    height: 25px;
+    background-image: linear-gradient(yellow, orange);
+    border-radius: 10px;
+    margin-left: 50px;
+    color: white;
+    cursor: pointer;
+
+}
+.login_btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 5px;
+/* border: 1px solid rgb(173, 170, 170); */
+border-radius: 20px;
+position: absolute;
+width: 400px;
+left: 90px;
+padding: 20px;
+}
+
+.uname{
+    width: 50%;
+    text-align: center;
+
+}
+
+.signup_btn{
+    
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 5px;
+/* border: 1px solid rgb(173, 170, 170); */
+border-radius: 20px;
+position: absolute;
+width: 100%;
+
+padding: 20px;
+}
+.hidden{
+    display: none;
+}
+.username{
+    width: 50%;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: none;
+    height: 20px;
+}
+.username:hover{
+    box-shadow: 3px 3px 5px black;
+    border: none;
+    background-color: rgb(201, 221, 238);
+
+}
+.submit{
+    width: 25%;
+    border: none;
+    height: 25px;
+    background-image: linear-gradient(red, orange);
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+}
+.name_roll{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+
+}
+.entername{
+    width: 60%;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: none;
+    height: 20px;
+}
+.perents{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 2px;
+    margin-left: 30px;
+}
+.signupbox{
+    display: flex;
+    width: 100%;
+    margin: 3px 30px;
+    /* border: 2px solid black; */
+}
+.schooldetail{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    /* border: 2px solid black; */
+}
+.name{
+    width: 100%;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: none;
+    height: 20px;
+    
+}
+.signup_submit{
+    width: 25%;
+    border: none;
+    height: 25px;
+    background-image: linear-gradient(red, orange);
+    border-radius: 10px;
+    margin: 20px 200px;
+    color: white;
+    cursor: pointer;
+
+}

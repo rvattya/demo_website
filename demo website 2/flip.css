@@ -1,0 +1,74 @@
+.third_container{
+    grid-area: rightbar;
+    position: relative;
+    /* padding: 10px; */
+    border-radius: 10px;
+    margin:  auto;
+    height: 350px;
+    width: 40vw;
+    margin: auto 20px;
+    background-color: rgb(transparent);
+    }
+    .flipper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+    }
+    .flipper.flip {
+        transform: rotateY(180deg);
+    }
+    .container1{
+        height: 350px;
+        padding: 50px;
+        position: absolute;
+        backface-visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        z-index: 11;
+        width: 100%;
+        border-radius: 10px;
+        background-color: rgb(226, 209, 113);
+    }
+    .container1 h2{
+        font-size: 30px;
+        color: blueviolet;
+    }
+    .button{
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        right: 50px;
+        border: none;
+        
+    }
+    .button_btn{
+        text-transform: uppercase;
+        border: none;
+        height: 40px;
+    cursor: pointer;
+        background-image: linear-gradient(blue, rgb(185, 22, 218));
+        color: white;
+        border-radius: 10px;
+    }
+    
+    .container2{
+        height: 350px;
+        /* display: none; */
+        color: white;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    backface-visibility: hidden;
+    z-index: 100;
+    background-color: rgb(20, 56, 56);
+    transform: rotatex(180deg);
+    }
+    .flipper.flipped {
+        transform: rotatex(180deg);
+    }

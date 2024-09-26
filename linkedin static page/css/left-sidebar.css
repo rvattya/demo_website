@@ -1,0 +1,129 @@
+
+.left-container{
+  
+    height: 400px;
+    width: 210px;
+    grid-area: leftbar;
+    border-radius: 10px;
+    margin-top: 40px;
+   
+}
+.left-main1-container{
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 320px;
+    background-color: white;
+    margin-bottom: 5px;
+
+    
+}
+.left-main2-container{
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 300px;
+    background-color: white;
+
+}
+.left-main3-container{
+    border: 1px solid gray;
+    margin-top: 5px;
+    border-radius: 10px;
+    height: 150px;
+    background-color: white;
+
+}
+.left-1{
+height: 50px;
+background-image: linear-gradient(red, rgb(216, 63, 170));
+border-radius: 10px 10px 0px 0px;
+cursor: pointer;
+}
+.left-2{
+display: flex;
+flex-direction: column;
+gap: 5px;
+
+align-items: center;
+justify-content: center;
+border-bottom: 1px solid gray;
+padding-bottom: 20px;
+}
+.left-2 img{
+    height: 60px;
+    margin-top: -20px;
+    width: 60px;
+    border-radius: 100%;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.left-2 h3{
+    font-size: 15px;
+    cursor: pointer;
+}
+.left-2 p{
+text-align: center;
+font-size: 12px;
+
+}
+.left-3 {
+border-bottom: 1px solid gray;
+font-size: 12px;
+font-weight:500;
+padding: 0px 20px;
+height: 50px;
+cursor: pointer;
+
+
+}
+.left-3 span a{
+padding-left: 55px;
+text-decoration: none;
+}
+.left-4{
+border-bottom: 1px solid gray;
+font-size: 13px;
+padding: 0px 20px;
+height: 50px;
+font-weight:500;
+}
+.left-5{
+/* border-bottom: 1px solid gray; */
+padding-left: 15px;
+padding-top: 5px;
+font-size: 14px;
+cursor: pointer;
+}
+
+.left-5 span{
+    padding-left: 15px;
+    text-decoration: none;
+    font-size: 12px;
+}
+.bottom-left-1{
+    height: 30px;
+    /* border-bottom: 1px solid gray; */
+    font-size: 14px;
+    padding: 5px 0px 0px 20px;
+    color: gray;
+    font-weight:500;
+    
+    
+}
+.left-box1{
+    padding: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.bottom-left-2{
+    height: 30px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    font-size: 14px;
+
+    
+}
+
+    

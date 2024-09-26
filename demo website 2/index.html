@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="loginbtn.css">
+
+</head>
+
+<body>
+    <header class="main_header">
+        <nav class="main_navbar">
+            <div class="first_navbar">
+                <div class="first_navdiv">
+                    <a href=""><i class="fa-solid fa-phone"></i><span> &nbsp +91 93406 10359</span></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i><span> &nbsp info@vattyastech.com</span></a>
+
+                </div>
+                <div class="second_navdiv">
+
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+
+                </div>
+            </div>
+            <div class="second_navbar">
+                <div class="logo">
+
+                    <img src="images/LOGO.png" alt="">
+                </div>
+                <div class="menu">
+
+                    <a href="#"><i class="fa-solid fa-house-chimney"></i><span> &nbsp Home</span></a>
+                    <a href="#"><i class="fa-solid fa-braille"></i><span> &nbsp Services</span></a>
+                    <a href="#"><i class="fa-solid fa-eject"></i><span> &nbsp About</span></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i><span>&nbsp Contact</span></a>
+                    <a href="#"><i class="fa-solid fa-braille"></i><span> &nbsp More</span></a>
+                </div>
+                <div class="login">
+                    <button class="openloginBtn " id="openLoginBtn"> Login/SignUp &nbsp <i
+                            class="fa-solid fa-user"></i></button>
+
+                    <div class="login_popup hidden" id="login_popup">
+
+                        <button class="login_page" id="login_page">Login</button>
+                        <button class="signup_page" id="signup_page"> Signup</button>
+
+                        <div id="login_btn" class="login_btn ">
+
+                            <label for="" class="uname">Enter Your User Name</label>
+                            <input type="text" name="" id="User_name" class="username">
+
+                            <label for="" class="uname">Enter Your password</label>
+                            <input type="password" name="" id="password" class="username">
+
+                            <button id="login_submit" class="submit"> Submit Now</button>
+                        </div>
+                        <div id="signup_btn" class="signup_btn ">
+                            <div class="signupbox">
+
+                                <div class="name_roll">
+
+                                    <label for="">Name</label>
+                                    <input type="text" name="" id="enter_name" class="entername"
+                                        placeholder="Enter Your Name">
+
+                                    <label for=""> Roll Number</label>
+                                    <input type="number" name="" id="roll_name" class="entername"
+                                        placeholder="Enter Your Roll Number">
+                                </div>
+                                <div class="perents">
+
+                                    <label for=""> Father Name</label>
+                                    <input type="text" name="" id="father_name" class="entername"
+                                        placeholder="Enter Your Father Name">
+
+                                    <label for="">Mother Name</label>
+                                    <input type="text" name="" id="mother_name" class="entername"
+                                        placeholder="Enter Your Mother Name">
+                                </div>
+
+                            </div>
+                            <div class="schooldetail">
+
+
+                                <label for="">Enter Your Class Name</label>
+                                <input type="text" name="" id="school_name" class="name">
+
+                                <label for="">Enter Your school Name</label>
+                                <input type="text" name="" id="address_name" class="name">
+                            </div>
+
+
+                            <button id="signup_submit" class="signup_submit" onclick="output()"> Submit Now</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+     <div class="main_container">
+        <div class="first_container">
+            <div class="hero_box1">
+                <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, porro!</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus porro sunt odit tenetur dolorum
+                    quos
+                    exercitationem doloremque sed cupiditate facere Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Quae, autem!</p>
+                <div class="button">
+
+                    <button>Career Guide</button>
+                    <button> Explore More</button>
+                </div>
+            </div>
+            <div class="hero_box2">
+                <img src="images/image1.png" alt="">
+            </div>
+        </div>
+        <div class="second_container">
+            <div class="outputdetails">
+                <div>
+                    
+                    <h4>Your Name</h4> <p id="output_name">...................</p><br>
+                    <h4>Roll Number</h4><p id="output_roll">.....................</p><br>
+                    <h4>Class</h4><p id="output_class">......................</p>
+                </div>
+                <div>
+
+                    <h4>Father Number</h4> <p id="output_fathername">...................</p><br>
+                    <h4>Mother Number</h4><p id="output_mothername">.....................</p><br>
+                    <h4>School Name</h4><p id="output_schoolname">......................</p>
+                </div>
+               
+            </div>
+        </div>
+        <div class="forth_container">
+            <marquee behavior="" direction="right">Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit.</marquee>
+            <marquee behavior="" direction="">Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit.</marquee>
+            <marquee behavior="" direction="right">Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit.</marquee>
+
+        </div>
+        <div class="third_container" id="third_container">
+            <div class="flipper" id="flip_box">
+                <div class="container1">
+                    <h2>
+                        Calculate your persantage
+                
+                    </h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis numquam et consequuntur quos
+                        rem
+                        aspernatur esse aliquid ex a repudiandae!
+                    </p>
+                    <div class="button">
+
+                        <button class="button_btn">get 10th class persantage</button>
+                        <button class="button_btn">get 12th class persantage</button>
+
+                    </div>
+                </div>
+                <div class="container2">
+                    <div class="class_heading">
+                        <h2 style="text-align: center;">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, quos.
+                        </h2>
+                    </div>
+                    <div class="btn">
+
+                        <button class="classbtn" id="class10th">10th class</button>
+                        <button class="classbtn" id="class12th">12th class</button>
+                    </div>
+                    <div id="classes_grad">
+
+
+                        <div id="class_10th">
+                            <label for="" class="subject1">Hindi </label>
+                            <input type="number" class="subject" id="Hindi_10th" value="subject"><br>
+                            <label for="" class="subject1">English </label>
+                            <input type="number" class="subject" id="English_10th" value="subject"><br>
+                            <label for="" class="subject1">Maths </label>
+                            <input type="number" class="subject" id="Maths_10th" value="subject"><br>
+                            <label for="" class="subject1">Science</label>
+                            <input type="number" class="subject" id="Science_10th" value="subject"><br>
+                            <label for="" class="subject1">Social Science</label>
+                            <input type="number" class="subject" id="Socialscience_10th" value="subject"><br>
+
+                            <h4 id="final_marks"> </h4>
+                            <h3 id="parsentage"> </h3>
+                            <button class="btn_submit" id="btn_submit" onclick="parsentage()"> Calculate Your Parsentage </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    </div>
+    <div class="certificate_container">
+        <h4>Student Details</h4>
+        <h5 id="Student_name"> Student Name</h5>
+        <h5 id="Father_name"> Father Name</h5>
+        <h5 id="Mother_name"> Mother Name</h5>
+        <h5 id="class_name"> Class Name</h5>
+        <h5 id="roll_num"> Roll Number</h5>
+        <h5 id="school_name"> School Name</h5>
+        <table class="Grad_table" id="Grad_table">
+            <tr style="text-transform: uppercase;">
+                <th>Subject name</th>
+                <th>Total Marks</th>
+                <th>Get Marks</th>
+                <th>Extra Marks</th>
+
+            </tr>
+            <tr>
+                <td style="font-weight: 600;text-transform: uppercase;">Hindi</td>
+                <td>100</td>
+                <td id="show_10th_hindi">00</td>
+                <td>00</td>
+
+            </tr>
+            <tr>
+                <td style="font-weight: 600;text-transform: uppercase;">English</td>
+                <td>100</td>
+                <td id="show_10th_English">00</td>
+                <td>00</td>
+
+            </tr>
+            <tr>
+                <td style="font-weight: 600; text-transform: uppercase;">Maths</td>
+                <td>100</td>
+                <td id="show_10th_Maths">00</td>
+                <td>00</td>
+
+            </tr>
+            <tr>
+                <td style="font-weight: 600; text-transform: uppercase;">Science</td>
+                <td>100</td>
+                <td id="show_10th_Science">00</td>
+                <td>00</td>
+
+            </tr>
+            <tr>
+                <td style="font-weight: 600; text-transform: uppercase;">Social Secince</td>
+                <td>100</td>
+                <td id="show_10th_Socialscience">00</td>
+                <td>00</td>
+
+            </tr>
+            <tr>
+                <td style="font-weight: 600; text-transform: uppercase;">Total Marks</td>
+                <td>500</td>
+                <td id="show_10th_totalmarks">00</td>
+                <td>00</td>
+
+            </tr>
+
+        </table>
+    </div>
+    <div id="Services" class="services"></div>
+    <div class="brand_container">
+        <img src="images/education 1.jpg" alt="">
+        <img src="images/education 2.jpg" alt="">
+        <img src="images/education 3.jpg" alt="">
+        <img src="images/education 4.png" alt="">
+        <img src="images/education 5.jpg" alt="">
+        <img src="images/education 6.jpg" alt="">
+    </div>
+    <div class="Review_container">
+        <div class="reviews review1">
+            <p>I recently took my car to XYZ Auto Repair, and I couldn't be happier with the service I received. From
+                the
+                moment I walked in, the staff was incredibly friendly and professional. They took the time to explain
+                everything that needed to be done and answered all my questions without making me feel rushed.</p>
+            <h3>Bhupendra Singh</h3>
+            <img src="https://www.logolynx.com/images/logolynx/e1/e100b3fc2a67a1e91b72f50277746b97.jpeg" alt="">
+        </div>
+        <div class="reviews review2">
+            <p>The diagnostic process was thorough, and they identified issues that other shops had missed. The
+                technicians
+                were clearly knowledgeable and experienced. I needed a brake job, an oil change, and a check on my air
+                conditioning system.</p>
+            <h3>Sweta Tiwari</h3>
+            <img src="https://www.logolynx.com/images/logolynx/e1/e100b3fc2a67a1e91b72f50277746b97.jpeg" alt="">
+        </div>
+        <div class="reviews review3">
+            <p>One thing that really stood out was their attention to detail. They performed a complete inspection and
+                even
+                provided a detailed report with recommendations for future maintenance, which I found extremely helpful.
+                They also offered a warranty on parts and labor, giving me peace of mind.</p>
+            <h3>Vivek Sharma</h3>
+            <img src="https://www.logolynx.com/images/logolynx/e1/e100b3fc2a67a1e91b72f50277746b97.jpeg" alt="">
+        </div>
+    </div> 
+    <script src="index.js"></script>
+</body>
+
+
+</html>

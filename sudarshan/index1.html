@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+</head>
+<body>
+    <script>
+        // Categories and Questions
+        const categories = {
+            "Math": [
+                { question: "What is 2+2?", options: ["3", "4", "5", "6"], answer: 1 },
+                { question: "What is 5*3?", options: ["15", "10", "20", "25"], answer: 0 },
+                // Add 8 more questions for Math category
+            ],
+            "Science": [
+                { question: "What planet is known as the Red Planet?", options: ["Earth", "Mars", "Jupiter", "Saturn"], answer: 1 },
+                { question: "What is the chemical symbol for water?", options: ["H2O", "O2", "CO2", "H2"], answer: 0 },
+                // Add 8 more questions for Science category
+            ],
+            "History": [
+                { question: "Who was the first President of the United States?", options: ["Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams"], answer: 2 },
+                { question: "In which year did World War II end?", options: ["1945", "1939", "1918", "1963"], answer: 0 },
+                // Add 8 more questions for History category
+            ],
+            "Geography": [
+                { question: "What is the capital of France?", options: ["London", "Berlin", "Paris", "Madrid"], answer: 2 },
+                { question: "Which is the largest ocean?", options: ["Atlantic", "Indian", "Arctic", "Pacific"], answer: 3 },
+                // Add 8 more questions for Geography category
+            ]
+        };
+
+        let selectedCategory = null;
+        let score = 0;
+        let questionIndex = 0;
+        let startTime = 0;
+        let totalTime = 0;
+
+        // Select a category
+        function selectCategory() {
+            const categoryNames = Object.keys(categories);
+            const categoryIndex = prompt(`Select a category: \n0: ${categoryNames[0]}\n1: ${categoryNames[1]}\n2: ${categoryNames[2]}\n3: ${categoryNames[3]}`);
+            selectedCategory = categories[categoryNames[categoryIndex]];
+            startQuiz();
+        }
+
+        // Start the quiz
+        function startQuiz() {
+            startTime = Date.now();
+            askQuestion();
+        }
+
+        // Ask a question
+        function askQuestion() {
+            if (questionIndex < selectedCategory.length) {
+                const question = selectedCategory[questionIndex];
+                const userAnswer = prompt(`${question.question}\n0: ${question.options[0]}\n1: ${question.options[1]}\n2: ${question.options[2]}\n3: ${question.options[3]}`);
+                if (parseInt(userAnswer) === question.answer) {
+                    score++;
+                }
+                questionIndex++;
+                setTimeout(askQuestion, 10000); // 10 seconds to answer each question
+            } else {
+                endQuiz();
+            }
+        }
+
+        // End the quiz and show the results
+        function endQuiz() {
+            totalTime = (Date.now() - startTime) / 1000;
+            alert(`Quiz finished! \nYour score is: ${score}/${selectedCategory.length}\nTotal time taken: ${totalTime} seconds`);
+        }
+
+        // Start the game
+        selectCategory();
+    </script>
+</body>
+</html>

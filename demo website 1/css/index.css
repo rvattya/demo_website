@@ -1,0 +1,516 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: azure;
+
+}
+
+/* header css */
+#header {
+  background-color: rgb(53, 15, 88);
+  position: fixed;
+
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar {
+  display: flex;
+
+  gap: 10px;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 5px;
+  justify-content: space-around;
+
+}
+
+.navbar img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+}
+
+.navbar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: antiquewhite;
+  /* border: 1px solid black; */
+}
+
+/* hero css */
+.hero {
+  display: flex;
+  padding-top: 100px;
+  /* position: relative; */
+  /* margin-top: 50px; */
+  background-color: azure;
+  /* border: 2px solid black; */
+}
+
+.sec1 {
+  margin-top: 50px;
+  /* padding-top: 50px ; */
+  display: flex;
+  gap: 30px;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sec1 h2 {
+  font-size: 35px;
+  text-align: center;
+  color: brown;
+  text-shadow: 3px 3px 4px wheat;
+
+
+}
+
+.sec button {
+  background-color: rgb(15, 72, 110);
+  border: 1px solid rgb(15, 72, 110);
+  height: 25px;
+  width: 140px;
+  border-radius: 10px;
+}
+
+.sec button a {
+  color: aliceblue;
+
+  text-decoration: none;
+  padding: 3px;
+}
+
+.sec1 p {
+  font-size: 15px;
+  text-align: center;
+}
+
+.sec2 {
+  width: 60%;
+  /* margin: auto; */
+  justify-content: center;
+  align-items: center;
+
+}
+
+.sec img {
+  width: 500px;
+  height: 400px;
+  margin: 0px auto;
+  float: right;
+}
+
+.sec {
+  /* border: 2px solid red; */
+  margin: 20px;
+  height: 400px;
+}
+
+/* section css :start */
+.section1 {
+  margin: 20px auto;
+  width: 60%;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+}
+
+.section1 h2 {
+  font-size: 35px;
+  color: brown;
+  text-shadow: 3px 3px 4px wheat;
+}
+
+.section1 p {
+  font-size: 15px;
+  text-align: center;
+
+}
+
+.section1 button {
+  background-color: rgb(15, 72, 110);
+  border: 1px solid rgb(15, 72, 110);
+  height: 25px;
+  width: 140px;
+  border-radius: 10px;
+}
+
+.section1 button a {
+  color: aliceblue;
+
+  text-decoration: none;
+  padding: 3px;
+}
+
+/* services css stsrted */
+.services {
+  margin: 0px auto;
+  /* border: 2px solid black; */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* background-color: aqua; */
+  /* border: 2px solid blue; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.servi {
+  background-image: url(https://i.pinimg.com/736x/dc/19/e9/dc19e9b94a372ebc21ffeb7623d5632a.jpg);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  /* position: sticky; */
+  z-index: -1;
+  filter: blur(5px);
+}
+
+.part {
+  margin: 110px 50px;
+  /* overflow-y: auto; */
+  background-color: azure;
+  border-radius: 15px;
+  /* border: 2px solid black; */
+  height: 400px;
+  width: 100%;
+  /* box-shadow: 3px 3px 5px black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  z-index: 1;
+
+}
+
+.part:hover {
+  box-shadow: 3px 3px 5px black;
+  background-color: rgb(193, 231, 228);
+
+
+}
+
+.part img {
+  height: 200px;
+  margin-top: 10px;
+  width: 200px;
+  border-radius: 15px;
+
+}
+
+.part img:hover {
+  box-shadow: 3px 3px 5px black;
+
+}
+
+.part h2 {
+  font-size: 25px;
+  color: brown;
+  text-shadow: 3px 3px 4px wheat;
+  text-align: center;
+}
+
+.part p {
+
+  font-size: 15px;
+  width: 180px;
+  text-align: center;
+}
+
+.part button {
+  background-color: rgb(15, 72, 110);
+  border: 1px solid rgb(15, 72, 110);
+  height: 25px;
+  width: 140px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.part button a {
+  color: aliceblue;
+
+  text-decoration: none;
+  padding: 3px;
+}
+
+.allservices {
+  width: 140px;
+  /* border: 2px solid black; */
+  margin: 80px auto;
+}
+
+.allservices button {
+  background-color: rgb(15, 72, 110);
+  border: 1px solid rgb(15, 72, 110);
+  height: 25px;
+  width: 180px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px black;
+
+}
+
+.allservices a {
+  color: aliceblue;
+
+  text-decoration: none;
+  padding: 3px;
+}
+
+.feature {
+  margin: 30px 60px;
+  /* border: 2px solid black; */
+  height: 420px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature1 {
+  margin: 110px 5px;
+  /* overflow-y: auto; */
+  background-color: azure;
+  border-radius: 15px;
+  border: 2px solid black;
+  height: 400px;
+  width: 350px;
+  /* box-shadow: 3px 3px 5px black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  /* position: relative;
+z-index: 1; */
+}
+
+.feature1:hover {
+  background-color: gray;
+  border: none;
+}
+
+.feature1 img {
+  height: 200px;
+  margin-top: 10px;
+  width: 200px;
+  border-radius: 15px;
+}
+
+.Clint {
+  margin: 10px 10px;
+  /* border: 2px solid black; */
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.clints {
+  margin: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  display: flex;
+  border-radius: 25px;
+  flex-direction: column;
+  gap: 20px;
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.clints img {
+  height: 100px;
+  width: 100px;
+
+}
+
+.forms {
+  display: flex;
+  /* margin-top: 50px; */
+  height: 400px;
+  width: 100%;
+  /* border: 2px solid black; */
+  position: relative;
+  
+}
+
+.box {
+  background-image: url(https://img.freepik.com/free-photo/modern-sports-car-speeds-through-dark-curve-generative-ai_188544-9136.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1716336000&semt=sph);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 400px;
+  width: 100%;
+  filter: blur(7px);
+  position: absolute;
+  z-index: -1;
+}
+.form1 {
+  width: 50%;
+  margin-top: 50px;
+  color: white;
+  /* border: 2px solid black; */
+  /* background-color: gray; */
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  justify-items: center;
+  align-items: center;
+}
+
+.form1 h2 {
+  font-size: 35px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 5px rgb(173, 171, 171);
+
+}
+.form1 h2:hover {
+color: rgb(100, 5, 5);
+}
+.form1 p {
+  font-size: 15px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  /* text-shadow: 3px 3px 5px rgb(173, 171, 171); */
+
+}
+.main-form {
+  padding: 0px 200px;
+  width: 40%;
+  margin: 15px;
+  float: left;
+  /* border: 2px solid white; */
+  
+}
+.name{
+  background-color: rgb(255, 255, 255);
+  margin: 3px;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  box-shadow: none;
+  display: flex;
+  gap: 10px;
+}
+.name:hover{
+  background-color: rgb(146, 150, 150);
+}
+
+label {
+  color: rgb(255, 255, 255);
+
+
+
+}
+.button{
+  background-color: rgb(15, 72, 110);
+  border: 1px solid rgb(15, 72, 110);
+  height: 25px;
+  width: 180px;
+  border-radius: 10px;
+  color: wheat;
+  box-shadow: 3px 3px 5px black;
+
+}
+
+.services-h {
+  color: brown;
+  text-align: center;
+  margin: 30px;
+  text-shadow: 3px 3px 5px rgb(173, 171, 171);
+}
+
+.main-form {
+  width: 40%;
+  margin: 15px;
+
+
+
+}
+
+/* .main-f {
+ 
+} */
+
+.Review_container {
+  /* border: 2px solid black; */
+  height: 300px;
+  display: flex;
+
+
+}
+
+.reviews img {
+  height: 100px;
+  width: 100px;
+
+}
+
+.reviews {
+  margin: 20px;
+  padding: 25px 25px;
+  /* border: 2px solid rgb(7, 0, 0); */
+  width: 30%;
+  box-shadow: 3px 3px 3px 3px black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#footer {
+  display: flex;
+  /* border: 2px solid black; */
+  background-color: rgb(53, 15, 88);
+  /* height: 400%; */
+}
+
+.footer {
+  /* border: 2px solid red; */
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 250px;
+  gap: 25px;
+  color: aliceblue;
+  /* margin: 25px; */
+
+}
+
+.footer img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+
+}
+
+@media screen and (max-width: 500px) and (min-width:900px) {
+  
+}
+@media screen and  (min-width:900px) {
+  
+}

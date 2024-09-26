@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section class="container home_container" id="home_container">
+
+        <div class="section_first">
+
+            <img src="/quise app/images/logo_1.png" alt="">
+
+            <h2 class="heading">
+                Test Your Programming Knowledge
+            </h2>
+            <h2 class="heading">
+                Hello User...
+            </h2>
+            <p>
+                Enter Your Full Name And Start Your Quiz
+            </p>
+            <div>
+                <input type="text" id="user_name" required>
+                <button id="user_btn" class="user_btn">Enter</button>
+            </div>
+
+        </div>
+        <div class="section_second">
+            <div id="select_subject">
+                <h2 class="heading">Select Your Subject</h2>
+            </div>
+            <div id="show_category" class="show_category">
+
+            </div>
+        </div>
+        
+    </section>
+   
+    <section class="quiz_container container" id="quiz_container">
+        <div class="show_time_score">
+
+
+            <span id="show_time">Time Lest:- 10sec.</span>
+
+
+            <span style="color: green;" id="show_score">Your Score:- 0</span>
+
+        </div>
+
+        <div class="show_question">
+            <h2 id="show_question"> what is your name</h2>
+        </div>
+
+        <div class="show_option" id="show_option">
+            <span>gopal</span>
+            <span>rahul</span>
+            <span>suresh</span>
+            <span>ram</span>
+        </div>
+
+        <div>
+            <button  class="next_question" id="next_question"> Next Question</button>
+            <button  class="next_question" id="view_result"> View Result</button>
+        </div>
+
+    </section>
+    <section class="result_container container" id="result_container">
+        <div>
+            <h2>Your Quiz Answer</h2>
+            <h3 id="show_user">Dear User</h3>
+        </div>
+        <div>
+            <h4 id="total_atmp">Total Question You Attampt</h4>
+            <h4 id="time_taken">Total Time You Taken</h4>
+            <h4 id="total_score">Total Score</h4>
+            <h4 id="correct_ans">correct Answer</h4>
+            <h4 id="rong_ans">wrong Answer</h4>
+            <h4 is="Percentage">Your Percentage Score</h4>
+        </div>
+        <div>
+            <button id="return_home">Home</button>
+            <button id="start_again.btn">Start Again</button>
+        </div>
+    </section>
+<script src="index.js"></script>
+</body>
+
+</html>

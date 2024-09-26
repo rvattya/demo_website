@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <section class="container home" id="home">
+            <div class="section user-section">
+                <div class="image">
+                    <img src="assets/quiz2.jpg" alt="logo"> 
+                </div>
+                <div>
+                    <h1 class="heading">
+                        Welcome to the Quiz
+                    </h1>
+                    <div>
+                        <p class="text bold">
+                            Enter your Name to Continue the Quiz
+                        </p>
+                        <div class="user-name">
+                            <form action="">
+                                <input id="user-name" type="text" placeholder="Enter Your Name" required >
+                                <button class="enter-btn" id="enter-btn"> 
+                                    Enter 
+                                </button>
+                            </form>
+                        </div>
+                        <!-- <p class="text">
+                            You have 20 Seconds to answer each Questions.
+                        </p> -->
+                    </div>
+                </div>
+                
+            </div>
+            <div class="section category-section">
+                <h1 class="heading">
+                    Select Quiz Category
+                </h1>
+                <a href="#start">
+                    <div class="categories" id="categories"> 
+                    
+                    </div>
+                </a>
+            </div>
+    </section>
+
+    <section class="container start" id="start">
+        <div class="section start-section">
+            <div class="image">
+                <img src="assets/quiz2.jpg" alt="logo"> 
+            </div>
+            <div>
+                <h1 class="heading"> 
+                    Welcome to Quiz on <br>
+                    <span class="category-name" id="current-category">Programming</span>
+                </h1>
+                <div class="quiz-rules">
+                    <h3 class="bold head">
+                       # Quiz Rules #
+                    </h3>
+                    <p>
+                        <li class="text bold">
+                            The quiz will have 10 multiple-choice questions.
+                        </li>
+                    </p>
+                    <p>
+                        <li class="text bold">
+                            Each question has four options, only one correct.
+                        </li>
+                    </p>
+                    <p>
+                        <li class="text bold">
+                            You have 10 seconds to complete 1 question.
+                        </li>
+                    </p>
+                    <p>
+                        <li class="text bold">
+                            A timer will be displayed on the interface.
+                        </li>
+                    </p>
+                    
+                    <p>
+                        <li class="text bold">
+                            Each correct answer is worth 10 points.   
+                        </li>    
+                    </p>
+                    
+                    <p>
+                        <li class="text bold">
+                            No negative marking for incorrect answers.
+                        </li>
+                    </p>
+                    
+                    <p>
+                        <li class="text bold">
+                            Your score is the total number of points.
+                        </li>
+                    </p>
+                
+                </div>
+                <div class="button-section">
+                    <a href="#test">
+                        <button class="button start-btn" id="start-btn"> Start Quiz</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container test" id="test">
+            <div class="test-header">
+                <div class="text quiz-text timer">
+                    <h3>Timer : <span id="quiz-timer">20</span> s</h3> 
+                </div>
+                <h2 class="question-count" id="question-count">
+                    1/10
+                </h2>
+                <div class="text quiz-text score">
+                    <h3>Score : <span id="quiz-score">0</span> p</h3> 
+                </div>
+            </div>
+            <div class="section test-section">
+                <div class="question-section">
+                    <h3 class="question" id="question">
+                        What is Your Pet Name?
+                    </h3>
+                </div>
+                <div class="option-section" id="options">
+                    <li class="option"> Option 1</li>
+                    <li class="option"> Option 1</li>
+                    <li class="option"> Option 1</li>
+                    <li class="option"> Option 1</li>
+                </div>
+                <div class="button-section">
+                    <a href="#test" class="center-btn">
+                        <button class="button next-btn" id="next-btn">
+                            Next Que.
+                       </button>
+                    </a>
+                    <a href="#result" class="center-btn">
+                        <button class="button result-btn" id="result-btn">
+                            Show Result
+                       </button>
+                    </a>
+                </div>
+            </div>
+    </section>
+
+    <section class="container result" id="result">
+        <div class="section start-section">
+            <div class="image">
+                <img src="assets/quiz2.jpg" alt="logo"> 
+            </div>
+            <div>
+                <h1 class="heading"> 
+                    Your Quiz Result <br>
+                    <span class="current-user" id="current-user">User Name</span>
+                </h1>
+                <div class="quiz-result">
+                    <p>
+                        <li class="text bold">
+                            Your Quiz Score : <span class="result-value" id="user-score">00</span>points
+                        </li>
+                    </p>
+                    <p>
+                        <li class="text bold">
+                            Total Time Taken : <span class="result-value" id="total-time">00</span> seconds
+                        </li>
+                    </p>
+                    <p>
+                        <li class="text bold">
+                            Total Questions : <span class="result-value" id="total-questions">0</span>
+                        </li>
+                    </p>
+                    <p>
+                        <li class="text bold">
+                            Attempt Questions : <span class="result-value" id="attempt-questions">0</span>
+                        </li>
+                    </p>
+                    <p>
+                        <li class="text bold">
+                            Correct Questions : <span class="result-value" id="correct-questions">0</span>
+                        </li>
+                    </p>
+                    <p>
+                        <li class="text bold">
+                            Wrong Questions : <span class="result-value" id="wrong-questions">0</span>
+                        </li>
+                    </p>
+                    <p>
+                        <li class="text bold">
+                            Your Percentage : <span class="result-value" id="user-percentage">00</span>%
+                        </li>
+                    </p>
+                
+                </div>
+                <div class="button-section">
+                    <a href="#start">
+                        <button class="button again-btn" id="again-btn"> Start Again</button>
+                    </a>
+                    <a href="#home">
+                        <button class="button home-btn" id="home-btn"> Go To Home</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

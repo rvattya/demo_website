@@ -1,0 +1,107 @@
+.right-container{
+    /* border: 1px solid rgb(0, 0, 0); */
+    height: 80vh;
+    width: 230px;
+    grid-area: rightbar;
+    border-radius: 10px;
+    margin-top: 40px;
+    /* background-color: white; */
+
+
+
+}
+  
+
+.right-main1-container{
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 270px;
+    background-color: white;
+    margin-bottom: 5px;
+
+    
+}
+.right-main2-container{
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 250px;
+    background-color: white;
+    margin-bottom: 5px;
+
+}
+.right-main3-container{
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 275px;
+    background-color: white;
+}
+.right-box1{
+    display: flex;
+    justify-content: space-between;
+    padding:  5px 10px;
+}
+.right-box1 h2{
+    font-size: 15px;
+    font-weight: 600;
+}
+.rightbox{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 5px;
+}
+.rightbox h4{
+    font-size: 13px;
+    font-weight: 600;
+}
+.rightbox p{
+    font-size: 12px;
+    color: gray;
+}
+.dropbox{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    background-color: rgb(209, 200, 200);
+    width: 80px;
+    border-radius: 2px;
+    margin-left: 20px;
+}
+.icon-follow{
+    display: flex;
+    margin-top: 5px;
+    gap: 15px;
+}
+.icon-follow img{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    /* border: 2px solid black; */
+    margin-left: 5px;
+}
+.right-lastbox{
+    margin-top: 10px;
+   padding: 5px 5px;
+    border-bottom: 1px solid gray;
+}
+.follow-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    padding-bottom: -15px;
+    
+}
+.follow-text p{
+   margin-top: -5px;
+}
+.follow{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 20px;
+    width: 100px;
+    margin: 0px auto;
+    padding: 0px 25px;
+    font-size: 13px;
+    cursor: pointer;
+}
